@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/contacts')
+      .get('https://contact-management-api.vercel.app/contacts')
       .then((response) => {
         setContacts(response.data);
       })
