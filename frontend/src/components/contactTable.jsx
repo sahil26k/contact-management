@@ -12,14 +12,14 @@ function ContactTable({ searchTerm }) {
   const [sortConfig, setSortConfig] = useState({ column: 'name', direction: 'asc' });
 
   useEffect(() => {
-    fetch('http://localhost:5000/contacts')
+    fetch('https://contact-management-api.vercel.app/contacts')
       .then((response) => response.json())
       .then((data) => setContacts(data))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
   const handleDelete = (contactId) => {
-    fetch(`http://localhost:5000/contacts/${contactId}`, {
+    fetch(`https://contact-management-api.vercel.app/contacts/${contactId}`, {
       method: 'DELETE',
     })
       .then((response) => {
@@ -48,7 +48,7 @@ function ContactTable({ searchTerm }) {
   };
 
   const handleSave = () => {
-    fetch(`http://localhost:5000/contacts/${editingContact.contact_id}`, {
+    fetch(`https://contact-management-api.vercel.app/contacts/${editingContact.contact_id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
