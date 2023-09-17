@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.table-wrap {
+    max-width: 800px;
+    margin: 80px auto;
+    overflow-x: auto;
+    padding: 0px 16px;
+}
+
+table, td, th {
+    text-align: left;
+    font-size: 18px;
+}
+
+td {
+    font-size: 15px;
+}
+
+table thead tr {
+    background-color: #071665;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+table tbody tr td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    white-space: nowrap;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #b4b4b442;
+    color: #000;
+    font-weight: 500;
+}
+
+.icons {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.download-button {
+    background-color: #071665;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+.csv {
+    text-align: center;
+    margin-top: 50px;
+}
