@@ -6,11 +6,11 @@ const shortid = require('shortid');
 
 const app = express();
 
-app.use(cors({
-  origin: '',
-  credentials: true,
-}));
-
+app.use(cors());
+app.get("/",(req,res) =>{
+  res.setHeader("Access-control-Allow-Credentials","true");
+  res.send("api is running")
+})
 mongoose.connect('mongodb+srv://sahil:sahil@flight.vdrclkj.mongodb.net/contact', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
