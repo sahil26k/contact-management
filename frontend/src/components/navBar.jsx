@@ -9,7 +9,7 @@ function Navbar({ onSearch, onAddContact }) {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/contacts', formData);
+      await axios.post('https://contact-management-api.vercel.app/contacts', formData);
       setFormData({ name: '', contact: '', mail: '' });
       setShowForm(false);
       window.location.reload();
