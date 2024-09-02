@@ -11,7 +11,7 @@ app.get("/",(req,res) =>{
   res.setHeader("Access-control-Allow-Credentials","true");
   res.send("api is running")
 })
-mongoose.connect('mongodb+srv://sahil:sahil@flight.vdrclkj.mongodb.net/contact', {
+mongoose.connect('mongodb+srv://sahil:sahil@cluster0.m6jwpzg.mongodb.net/contact', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
